@@ -4,7 +4,8 @@ import EventList from "../components/events/events-list";
 import { getFeaturedEvents } from "../dummy-data";
 
 
-export default function Home() {
+export default function Home({name}) {
+  console.log(name);
   const featuredEvents = getFeaturedEvents();
   const [value, setValue] = useState(0);
 
